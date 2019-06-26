@@ -1,0 +1,64 @@
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+
+    margin: auto;
+    padding: auto;
+
+    h1 {
+        text-align: center;
+        color: dodgerblue;
+    }
+
+    .list-box {
+        max-height: 150px;
+        position: absolute;
+        z-index: 990;
+        background-color: aqua;
+        overflow: auto;
+        border: solid 1px black;
+        border-top: none;
+        display: none;
+
+        &.isSelected {
+            display: block;
+        }
+    }
+
+    .li {
+        text-align: center;
+        color: red;
+        width: 200px;
+        height: 30px;
+        line-height: 30px;
+        list-style-type: none;
+        border-bottom: solid 1px yellowgreen;
+
+        &:hover {
+            background: yellow;
+        }
+    }
+
+    input {
+        text-align: center;
+        height: 30px;
+        width: 200px;
+        border: none;
+        border-bottom: solid 1px dodgerblue;
+        appearance: none;
+        user-select: none;
+        cursor: pointer;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
